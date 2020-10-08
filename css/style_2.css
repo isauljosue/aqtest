@@ -1,0 +1,290 @@
+
+@import url(https://fonts.googleapis.com/css?family=Heebo|Prompt&display=swap);
+@import url('https://fonts.googleapis.com/css2?family=Red+Rose:wght@300;400;700&display=swap');
+
+html {
+  overflow-x: hidden;
+  overflow-y: overlay;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: 0.166667px;
+  line-height: 1.7em;
+  background-color: #000;
+  cursor: default;
+  display: block;
+  margin: 0px;
+}
+
+
+p {
+  font-family: "Helvetica", san-serif;
+  text-align: justify;
+}
+
+a, h1, .h1, h3, .h3, h4, .h4, h5, .h5, h6, .h6, h7, .h7, h8, .h8 {
+  color: white;
+
+}
+
+h1, .h1 {
+  font-family: "Helvetica", san-serif;
+  font-size: 60px;
+  line-height: 0px;
+  font-weight: 700;
+}
+
+h2, .h2 {
+  font-family: "Helvetica", san-serif;
+  font-size: 40px;
+  line-height: 0px;
+  font-weight: 700;
+}
+
+h3, .h3 {
+  font-family: "Helvetica", san-serif;
+  color: #fff;
+  font-size: 25px;
+  line-height: 25px;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+h4, .h4 {
+  font-family: "Helvetica", san-serif;
+  font-size: 25px;
+  line-height: 20px;
+  font-weight: 300;
+  text-decoration: none;
+  margin: 0;
+
+  color: #474747;
+}
+
+h5, .h5 {
+  font-family: "Helvetica", san-serif;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 300;
+  text-decoration: none;
+  margin: 0;
+  color: #474747;
+}
+
+h6, .h6 {
+    font-family: "Helvetica", san-serif;
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 300;
+    text-decoration: none;
+    margin: 0;
+    color: #474747;
+}
+
+a {
+  font-family: "Helvetica", san-serif;
+  text-decoration: none;
+  color: white;
+}
+
+/* --------------------------------------------- */
+
+.header {
+  height: 80px;
+  padding: 0.6em;
+  background: rgba(0, 0, 0,1);
+  color: white;
+  position: fixed;
+  width: 100%;
+  z-index: 300;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navtext {
+  width: 45%;
+  line-height: 18px;
+  font-size: 18px;
+}
+
+.navlink {
+  margin-right: 15px;
+}
+
+.pointer {cursor: pointer;}
+
+.L {
+  float: left;
+  text-align: left;
+}
+
+.R {
+  float: right;
+  text-align: right;
+}
+
+
+.box_container {
+  float: none;
+  width: 100%;
+  height: 100vh;
+  overflow:hidden
+}
+
+.bord {
+  border: 1px solid;
+  border-radius: 12px;
+  border-color: #000;
+}
+
+
+.gallery_container {
+  width: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding-left: 8em;
+  padding-right: 8em;
+  z-index: 150;
+}
+
+.img_container {
+  position: relative;
+  float: left;
+  overflow: hidden;
+  text-align: center;
+  margin: 0px;
+  margin-bottom: 60px;
+  width: 33.33%;
+
+}
+
+.img_object {
+  width: 480px;
+  height: 380px;
+  object-fit: cover;
+}
+
+/* ----------  ----------*/
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.imag {
+  width: 100%;
+}
+
+
+.icon {
+  float: left;
+  width: 57px;
+  height: 30px;
+  margin-top: 0px;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.igicon {
+  float: left;
+  width: 30px;
+  height: 30px;
+  margin-top: 0px;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+/* ----------  ----------*/
+
+.eyes {
+  width: 110px;
+}
+
+
+.end {
+  height: 320px;
+  padding-top: 4em;
+  padding-left: 10em;
+  padding-right: 10em;
+  padding-bottom: 6em;
+
+}
+
+.endtype {
+  width: 22%;
+}
+
+.bottom {
+  display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #000;
+  padding-left: 8em;
+  padding-right: 8em;
+  padding-bottom: 4.5em;
+}
+
+.button {
+	--x: 50%;
+	--y: 50%;
+
+	position: relative;
+	appearance: none;
+	padding: 1em 2em;
+	color: white;
+	cursor: pointer;
+	outline: none;
+	border-radius: 100px;
+	border: 2px solid transparent;
+	background: linear-gradient(#000, #000) padding-box, radial-gradient(farthest-corner at var(--x) var(--y), #aba71f, #3f788c) border-box;
+}
+
+/* ----------  ----------*/
+
+.ig {
+  width: 60px;
+  cursor: pointer;
+}
+
+.igwebtext {
+  color: #474747;
+  font-family: "Helvetica", san-serif;
+  text-decoration: none;
+  font-size: 10px;
+  margin-bottom: 0;
+}
+.blink {}
+
+.blink:hover {
+		    -webkit-animation: blink 0.2s step-end infinite;
+		            animation: blink 0.2s step-end infinite;
+		}
+		@-webkit-keyframes blink { 50% { visibility: hidden; }}
+		        @keyframes blink { 50% { visibility: hidden; }}
+
+
+  .aq {
+    width: 200px;
+  }
+
+
+.mid {
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 3em;
+  width: 100%;
+  float: left;
+  position: sticky;
+  text-align: center;
+  z-index: 200;
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+
+/* ---------- ---------------------------------------------------------------- ----------*/
